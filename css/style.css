@@ -2,55 +2,52 @@
 
 /* Main Design Begins Here */ 
 html {
-    background-color: #FFD599;
+    background: black;
+    height:100%;
+    width:100%;
+    margin:0;
+    position:relative;
 }
 
-html header h1 {
-    padding-top: 50px;
-    font-weight: normal;
-    font-style: italic;
-    word-spacing: 10px;
-    letter-spacing: 3px;
-    text-shadow: 2px 7px 5px black;  
-         
-}
-html header img {
-    float: left;
-    margin: 20px 20px; 
+.logo {
+    height: 300px;
+    position: absolute;
+    margin-left: 10px;
     
-  
+     
 }
 
 .acc {
     height: 30px;
     position: absolute;
-    margin-top: 70px;
-    margin-left: 1460px;
+    margin-top: 240px;
+    margin-left: 1650px;
 }
 
 /* Main Design Ends Here */ 
 
 /* Content Design Begins Here*/ 
 .top-container {
-    margin: 30px auto;
+    margin: auto;
     text-align: center;
-    background-color: #EA9EA9;
     font-size: 25px;   
     height: 800px;
     width: 1200px;
-    border: solid rgb(60, 4, 46) 1px;
+    
     
 }
+
 
 
 .main-content {    
     display: block;
     float: left;
-    background-color: #E5DBC3;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     height: 450px;
     width: 1000px;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 150px;
+    margin-top: 160px;
     border: solid rgb(60, 4, 46) 1px;
 }
 .main-content p{
@@ -68,11 +65,15 @@ html header img {
 
 .main-nav li {
     list-style: none;
+    margin-left: 90px;
     float: left;
+    margin-top: 270px;
+    
 }
 .main-nav a {
-    color: rgb(60, 4, 46);
-    background-color: #FFD599;
+    color: black;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     text-decoration: none;
     padding: 10px;
     margin-left: 50px;
@@ -88,32 +89,43 @@ html header img {
     font-size: 15px;
     border: none;
     text-decoration: none;
+    color: gold;
     
 }
 .side-nav li {
     list-style: none;
     text-align: center;
-    border: solid rgb(60, 4, 46) 1px;
     font-weight: bolder;
     padding: 2px;
     border-collapse: collapse;
+    float: left;
+    padding: 3px;
+    
     
    
 }
 .side-nav {
     float: left;
     position: absolute; 
-    margin-left: 1400px;
-    margin-top: 100px;
+    margin-left: 1600px;
+    margin-top: 250px;
     text-align: center;  
     line-height: 25px;      
     border-collapse: separate;
+    padding: 3px;
 }
 
-.account-area {
-   
-
+.line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin-top: 350px;
+    left: 0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
+
+
 
 
 /* Nav Design Ends Here*/
@@ -201,3 +213,54 @@ footer {
 	zoom: 1;
 }
 /* Group Clear Floats Ends Here*/
+
+/*Basic structure of slider*/
+.container{
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 150px;
+    left: 1000px;
+    overflow: hidden;
+    border: 1px solid gold;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+}
+/*Area of images*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.wrapper img {
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
