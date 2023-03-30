@@ -10,9 +10,10 @@ html {
 }
 
 .logo {
-    height: 300px;
+    height: 235px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 65px;
+    margin-top: 35px;
     
      
 }
@@ -20,7 +21,7 @@ html {
 .acc {
     height: 30px;
     position: absolute;
-    margin-top: 240px;
+    margin-top: 190px;
     margin-left: 1650px;
 }
 
@@ -33,11 +34,8 @@ html {
     font-size: 25px;   
     height: 800px;
     width: 1200px;
-    
-    
+        
 }
-
-
 
 .main-content {    
     display: block;
@@ -47,7 +45,7 @@ html {
     height: 450px;
     width: 1000px;
     margin-left: 150px;
-    margin-top: 160px;
+    margin-top: 110px;
     border: solid rgb(60, 4, 46) 1px;
 }
 .main-content p{
@@ -65,20 +63,26 @@ html {
 
 .main-nav li {
     list-style: none;
-    margin-left: 90px;
     float: left;
-    margin-top: 270px;
-    
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 10%;
+   
+       
 }
 .main-nav a {
+    float: left;
     color: black;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     text-decoration: none;
     padding: 10px;
-    margin-left: 50px;
+    border-radius: 8px;
     border: solid rgb(60, 4, 46) 1px;
     font-size: 17px;
+    width: 100%;
+    
+    
 }
 .main-nav a:hover {
     color: rgb(60, 4, 46);
@@ -108,7 +112,7 @@ html {
     float: left;
     position: absolute; 
     margin-left: 1600px;
-    margin-top: 250px;
+    margin-top: 200px;
     text-align: center;  
     line-height: 25px;      
     border-collapse: separate;
@@ -119,7 +123,7 @@ html {
     position: absolute;
     width: 100%;
     height: 1px;
-    margin-top: 350px;
+    margin-top: 270px;
     left: 0;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -216,11 +220,11 @@ footer {
 
 /*Basic structure of slider*/
 .container{
-    width: 1000px;
-    height: 200px;
+    width: 800px;
+    height: 150px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 150px;
+    top: 120px;
     left: 1000px;
     overflow: hidden;
     border: 1px solid gold;
